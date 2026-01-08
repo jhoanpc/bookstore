@@ -1,4 +1,4 @@
-package com.spacegroup.bookstore.models;
+package com.spacegroup.bookstore.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;

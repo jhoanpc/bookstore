@@ -1,8 +1,8 @@
-package com.spacegroup.bookstore.servive;
-
-import com.spacegroup.bookstore.models.Reservation;
+package com.spacegroup.bookstore.service;
 
 import java.time.LocalDateTime;
+
+import com.spacegroup.bookstore.model.Reservation;
 
 public interface ReserveBook {
 

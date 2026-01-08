@@ -1,8 +1,9 @@
 package com.spacegroup.bookstore.controllers;
 
 import com.spacegroup.bookstore.dto.ReservationDTO;
-import com.spacegroup.bookstore.models.Reservation;
-import com.spacegroup.bookstore.servive.ReserveBook;
+import com.spacegroup.bookstore.model.Reservation;
+import com.spacegroup.bookstore.service.ReserveBook;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -25,12 +26,8 @@ public class ReserveController {
 
         logger.info("An INFO Message" + reservationDTO.getDateReservation());
         Reservation result = reserveBook.reserveBook(bookId, reservationDTO.getDateReservation(), reservationDTO.getEndReservation());
-
-        if(result != null){
-            return ResponseEntity.status(HttpStatus.CREATED).body(result);
-        }
-
-        return ResponseEntity.badRequest().build();
+        return ResponseEntity.status(HttpStatus.CREATED).body(result);
+    
     }
 
 

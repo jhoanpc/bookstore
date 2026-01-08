@@ -1,8 +1,8 @@
-package com.spacegroup.bookstore.servive;
-
-import com.spacegroup.bookstore.models.Book;
+package com.spacegroup.bookstore.service;
 
 import java.util.List;
+
+import com.spacegroup.bookstore.model.Book;
 
 public interface IBookService {
 

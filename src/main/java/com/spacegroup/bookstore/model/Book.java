@@ -1,6 +1,7 @@
-package com.spacegroup.bookstore.models;
+package com.spacegroup.bookstore.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
